@@ -1,0 +1,108 @@
+
+Hp@Keerthan UCRT64 ~
+$ mkdir Test
+
+Hp@Keerthan UCRT64 ~
+$ cd Test
+
+Hp@Keerthan UCRT64 ~/Test
+$ git init
+Initialized empty Git repository in C:/Users/Hp/Test/.git/
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ ls
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ touch practice.txt
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ echo "Welcome to my Project!">practice.txt
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git add practice.txt
+warning: in the working copy of 'practice.txt', LF will be replaced by CRLF the next time Git touches it
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git commit -m "First Version"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Hp@Keerthan.(none)')
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ ls
+practice.txt
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git config --global user.email "kairamkondakeerthan@gmail.com"
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git commit -m "first version"
+[master (root-commit) c5d5a78] first version
+ 1 file changed, 1 insertion(+)
+ create mode 100644 practice.txt
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git log
+commit c5d5a78c5c6c309cc06eaa270a266b1eba8bdc27 (HEAD -> master)
+Author: Kairamkonda Keerthan <kairamkondakeerthan@gmail.com>
+Date:   Thu Oct 29 11:32:50 2026 +0530
+
+    first version
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ touch practice2.txt
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ echo "Welcome to Java Class!">practice2.txt
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ cat practice2.txt
+Welcome to Java Class!
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git add practice2.txt
+warning: in the working copy of 'practice2.txt', LF will be replaced by CRLF the next time Git touches it
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git commit -m "second version"
+[master 7e431b1] second version
+ 1 file changed, 1 insertion(+)
+ create mode 100644 practice2.txt
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ ls
+practice.txt  practice2.txt
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git config --global user.name "Kairamkonda Keerthan"
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$ git log
+commit 7e431b12ad36613665d62c8ff075d7dfe055eaed (HEAD -> master)
+Author: Kairamkonda Keerthan <kairamkondakeerthan@gmail.com>
+Date:   Thu Oct 29 11:36:07 2026 +0530
+
+    second version
+
+commit c5d5a78c5c6c309cc06eaa270a266b1eba8bdc27
+Author: Kairamkonda Keerthan <kairamkondakeerthan@gmail.com>
+Date:   Thu Oct 29 11:32:50 2026 +0530
+
+    first version
+
+Hp@Keerthan UCRT64 ~/Test (master)
+$
